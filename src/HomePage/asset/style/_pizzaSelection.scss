@@ -1,0 +1,87 @@
+.pizzaSelection {
+	background: url(../pic/Base.png);
+	margin-top: 7rem;
+	height: 40vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.selection_prev {
+        position: relative;
+        margin-left: 1rem;
+
+		svg {
+			position: absolute;
+			font-size: 2rem;
+			left: 25%;
+			top: 23%;
+			color: white;
+		}
+	}
+
+	.selection_info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.info_title {
+			font-size: 48px;
+			font-family: "Abril Fatface";
+			color: rgb(255, 255, 255);
+			text-align: left;
+		}
+
+		.info_price {
+			font-size: 36px;
+			font-family: "Fredericka the Great";
+			color: rgb(0, 0, 0);
+			line-height: 1.2;
+            text-align: left;
+            margin-top: 0.5rem;
+		}
+
+		.info_des {
+			font-size: 18px;
+			font-family: "Josefin Sans";
+			color: rgb(255, 255, 255);
+			line-height: 1.667;
+			text-align: left;
+            width: 355px;
+            margin-top: 0.5rem;
+		}
+
+		.info_order {
+            button {
+                background: #fdbc2c;
+                border: none;
+                padding: 1rem 3rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: "Josefin Sans";
+                margin-top: 0.5rem;
+            }
+        }
+        
+        
+    }
+    
+    .selection_pic {
+        background: #000;
+        width: 35%;
+        height: 110%;
+        border-radius: 50%;
+    }
+
+	.selection_next {
+        position: relative;
+        margin-right: 1rem;
+
+		svg {
+			position: absolute;
+			font-size: 2rem;
+			left: 25%;
+			top: 23%;
+			color: white;
+		}
+	}
+}
