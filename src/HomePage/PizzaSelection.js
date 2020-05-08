@@ -1,7 +1,6 @@
 import React from "react";
 import square from "./asset/pic/square.png";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function PizzaSelection() {
