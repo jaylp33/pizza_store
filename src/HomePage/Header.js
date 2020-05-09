@@ -1,15 +1,11 @@
-import React ,{useState}from "react";
+import React from "react";
 import { ReactComponent as Hamburger } from "./asset/pic/hamburger.svg";
-import shoppingCart from "./asset/pic/shoppingCart.png";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Badge from "@material-ui/core/Badge";
 import { withStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 
 export default function Header() {
-
-    const [hamActive, sethamActive] = useState(false);
-
 	const StyledBadge = withStyles((theme) => ({
 		badge: {
 			right: 5,
@@ -21,8 +17,8 @@ export default function Header() {
 
 	const hamburger_active = (e) => {
 		e.target.classList.toggle("active");
-    };
-    
+	};
+
 	return (
 		<div>
 			<div className="header">

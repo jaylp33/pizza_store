@@ -30,19 +30,19 @@ export default function BuildPizzaComp({ selection }) {
 	);
 
 	function get_context() {
-		if (selection.num == "1.") {
+		if (selection.num === "1.") {
 			return (
 				<div className="expandDetail">
 					<h1>add crust</h1>
 				</div>
 			);
-		} else if (selection.num == "2.") {
+		} else if (selection.num === "2.") {
 			return (
 				<div className="expandDetail">
 					<h1>add sauce</h1>
 				</div>
 			);
-		} else if (selection.num == "3.") {
+		} else if (selection.num === "3.") {
 			return (
 				<div className="expandDetail">
 					<div className="boxPhoto">

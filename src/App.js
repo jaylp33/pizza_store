@@ -4,13 +4,13 @@ import HomePage from "./HomePage/HomePage";
 import Margherita from "./HomePage/Margherita";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-import { useSpring, animated } from "react-spring";
+// import { useSpring, animated } from "react-spring";
 
 function App() {
-	const props = useSpring({
-		opacity: 1,
-		from: { opacity: 0 },
-	});
+	// const props = useSpring({
+	// 	opacity: 1,
+	// 	from: { opacity: 0 },
+	// });
 
 	const route = [
 		{
@@ -27,7 +27,7 @@ function App() {
 
 	return (
 		<Router>
-		  <>
+			<>
 				{route.map(({ path, Component }) => (
 					<Route key={path} exact path={path}>
 						{({ match }) => (
@@ -37,16 +37,17 @@ function App() {
 								classNames="page"
 								unmountOnExit
 							>
-								<div className="page">
-									<Component />
-								</div>
+								<Switch>
+									<div className="page">
+										<Component />
+									</div>
+								</Switch>
 							</CSSTransition>
 						)}
 					</Route>
 				))}
-		  </>
+			</>
 		</Router>
-
 	);
 }
 

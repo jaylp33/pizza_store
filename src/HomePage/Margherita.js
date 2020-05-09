@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Header from "./Header";
 import StoreInfo from "./StoreInfo";
 import PizzaSelection from "./PizzaSelection";
-import BuildPizza from './BuildPizza';
+import BuildPizza from "./BuildPizza";
 
 export default function Margherita() {
 	return (
