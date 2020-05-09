@@ -1,6 +1,6 @@
 import React from "react";
 
-import BuildPizzaComp from "./buildPizza/BuildPizzaComp";
+import BuildPizzaComp from "./Component/BuildPizzaComp";
 
 export default function BuildPizza() {
 	const selectionDetail = [
@@ -21,7 +21,7 @@ export default function BuildPizza() {
 			header: "Choose Your Toppings",
 		},
 	];
-	
+
 	return (
 		<div className="buildPizza">
 			<h2>Build Your Own Pizza</h2>
@@ -68,11 +68,15 @@ export default function BuildPizza() {
 					</div>
 				</div> */}
 
-				{selectionDetail.map(selection => {
-					return <BuildPizzaComp selection={selection} key={selection.header}/>
+				{selectionDetail.map((selection) => {
+					return (
+						<BuildPizzaComp
+							selection={selection}
+							key={selection.header}
+						/>
+					);
 				})}
-            	<div className="createOwnPizza">Create your own pizza</div>
-
+				<div className="createOwnPizza">Create your own pizza</div>
 			</div>
 		</div>
 	);

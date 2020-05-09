@@ -37,11 +37,9 @@ function App() {
 								classNames="page"
 								unmountOnExit
 							>
-								<Switch>
 									<div className="page">
 										<Component />
 									</div>
-								</Switch>
 							</CSSTransition>
 						)}
 					</Route>

@@ -18,6 +18,10 @@ $jose: "Josefin Sans";
 	font-family: "RoyaChicken";
 	src: url("../Royal\ Chicken.otf");
 }
+
+* {
+	box-sizing: border-box;
+}
 .HomePage {
 	width: 100%;
 	height: 100vh;
@@ -149,3 +153,5 @@ $jose: "Josefin Sans";
 @import "storeInfo.scss";
 @import "pizzaSelection.scss";
 @import "buildPizza.scss";
+@import "pizzaDes.scss";
+@import "review.scss";

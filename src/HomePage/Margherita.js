@@ -3,6 +3,8 @@ import Header from "./Header";
 import StoreInfo from "./StoreInfo";
 import PizzaSelection from "./PizzaSelection";
 import BuildPizza from "./BuildPizza";
+import PizzaDescription from "./PizzaDescription";
+import Review from "./Review";
 
 export default function Margherita() {
 	return (
@@ -12,6 +14,8 @@ export default function Margherita() {
 			<StoreInfo />
 			<PizzaSelection />
 			<BuildPizza />
+			<PizzaDescription />
+			<Review />
 		</div>
 	);
 }
