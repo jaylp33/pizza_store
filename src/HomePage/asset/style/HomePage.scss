@@ -7,6 +7,8 @@ $fatface: "Abril Fatface";
 $royaChicken: "RoyaChicken";
 $Freder: "Fredericka the Great";
 $jose: "Josefin Sans";
+$yellow: #fdbc2c;
+$orange: rgb(217, 79, 43);
 
 @mixin phone {
 	@media (max-width: 769px) {
@@ -41,7 +43,7 @@ $jose: "Josefin Sans";
 	h2 {
 		font-size: 36px;
 		font-family: $fatface, cursive;
-		color: rgb(253, 188, 44);
+		color: $yellow;
 		text-align: center;
 		letter-spacing: 2px;
 		width: 769px;
@@ -49,10 +51,10 @@ $jose: "Josefin Sans";
 	}
 	button {
 		background: #000;
-		color: #fdbc2c;
+		color: $yellow;
 		padding: 0.5rem 1rem;
 		margin-top: 1rem;
-		border-color: #fdbc2c;
+		border-color: $yellow;
 		text-transform: uppercase;
 		transition: all 0.5s;
 		cursor: pointer;
@@ -95,12 +97,12 @@ $jose: "Josefin Sans";
 		.logo {
 			font-size: 6rem;
 			font-family: $royaChicken;
-			color: rgb(217, 79, 43);
+			color: $orange;
 			margin-bottom: 1.5rem;
 		}
 
 		.shoppingCart {
-			background-color: rgb(253, 188, 44);
+			background-color: $yellow;
 			width: 4rem;
 			display: flex;
 			justify-content: center;
@@ -155,3 +157,5 @@ $jose: "Josefin Sans";
 @import "buildPizza.scss";
 @import "pizzaDes.scss";
 @import "review.scss";
+@import "_phoneApp.scss";
+@import "_latestNews.scss";

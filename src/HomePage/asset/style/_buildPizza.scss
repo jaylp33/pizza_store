@@ -4,7 +4,7 @@
 	h2 {
 		font-size: 48px;
 		font-family: $fatface;
-		color: rgb(253, 188, 44);
+		color: $yellow;
 		text-align: center;
 	}
 
@@ -42,14 +42,14 @@
 		h2 {
 			font-size: 72px;
 			font-family: $Freder;
-			color: rgb(217, 79, 43);
+			color: $orange;
 			margin-left: 1rem;
 		}
 
 		h3 {
 			font-size: 36px;
 			font-family: $fatface;
-			color: rgb(253, 188, 44);
+			color: $yellow;
 			text-align: left;
 			margin-left: 2rem;
 		}
@@ -99,7 +99,7 @@
 			.boxPhoto {
 				height: 95%;
 				flex: 50%;
-				border: 1px solid rgb(217, 79, 43);
+				border: 1px solid $orange;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -130,7 +130,7 @@
 				.cheese_list {
 					font-size: 18px;
 					font-family: $jose;
-					color: rgb(217, 79, 43);
+					color: $orange;
 					font-weight: bold;
 					line-height: 1.5;
 					margin-top: 1rem;
@@ -173,8 +173,8 @@
 	font-family: $jose;
 	
 	&:hover {
-		background-color: rgb(253, 188, 44);
-		box-shadow: 0 0 10px rgb(253, 188, 44);
+		background-color: $yellow;
+		box-shadow: 0 0 10px $yellow;
 
 	}
 

@@ -7,6 +7,8 @@ import {
 import { faStar as EmptyStar } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const { v4: uuidv4 } = require("uuid");
+
 export default function ReviewComponent({ review }) {
 	const getStar = () => {
 		const fullStar = review.star;
@@ -14,10 +16,10 @@ export default function ReviewComponent({ review }) {
 
 		let str = [];
 		for (let i = 0; i < fullStar; i++) {
-			str.push(<FontAwesomeIcon icon={FullStar} />);
+			str.push(<FontAwesomeIcon icon={FullStar} key={uuidv4()}/>);
 		}
 		for (let i = 0; i < emptyStar; i++) {
-			str.push(<FontAwesomeIcon icon={EmptyStar} />);
+			str.push(<FontAwesomeIcon icon={EmptyStar} key={uuidv4()} />);
 		}
 
 		return str;

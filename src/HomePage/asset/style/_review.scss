@@ -1,10 +1,11 @@
 .reviewComponent {
 	margin-top: 5rem;
+	position: relative;
 
 	.review_title {
 		font-size: 48px;
 		font-family: $fatface;
-		color: rgb(253, 188, 44);
+		color: $yellow;
 		line-height: 1.2;
 		text-align: center;
 	}
@@ -22,6 +23,8 @@
 	.review_detail {
 		display: flex;
 		justify-content: center;
+		// position: absolute;
+		// left: 18%;
 	}
 
 	.review_detail_container {
@@ -33,21 +36,21 @@
 	}
 
 	.review_star {
-		color: #d94f2b;
+		color: $orange;
 		margin-top: 0.5rem;
 	}
 
 	.review_pizza_photo {
 		width: 150px;
 		height: 150px;
-		background: #d94f2b;
+		background: $orange;
 		border-radius: 50%;
 	}
 
 	.review_ordered_pizza {
 		font-size: 24px;
 		font-family: $fatface;
-		color: rgb(253, 188, 44);
+		color: $yellow;
 		line-height: 1.2;
 		text-align: center;
 		margin-top: 0.5rem;
@@ -95,7 +98,7 @@
 
 		.review_url {
 			margin-top: 1rem;
-			color: #d94f2b;
+			color: $orange;
 		}
 	}
 }
@@ -103,10 +106,11 @@
 .review_changer {
 	display: flex;
 	justify-content: center;
-	margin-top: 4rem;
+	// margin-top: 40rem;
+	margin-top: 3rem;
 
 	svg {
-		color: rgb(217, 79, 43);
+		color: $orange;
 		font-size: 2rem;
 		position: absolute;
 		top: 8px;
@@ -116,7 +120,7 @@
 	.review_changer_prev {
 		border-style: solid;
 		border-width: 4px;
-		border-color: rgb(217, 79, 43);
+		border-color: $orange;
 		width: 56px;
 		height: 56px;
 		position: relative;
@@ -126,7 +130,7 @@
 	.review_changer_next {
 		border-style: solid;
 		border-width: 4px;
-		border-color: rgb(217, 79, 43);
+		border-color: $orange;
 		width: 56px;
 		height: 56px;
 		position: relative;

@@ -6,9 +6,9 @@
 	align-items: center;
 
 	h2 {
-		font-family: "Abril Fatface", cursive;
+		font-family: $fatface, cursive;
 		font-size: 48px;
-		color: rgb(253, 188, 44);
+		color: $yellow;
 		line-height: 1.2;
 		text-align: center;
 		margin-bottom: 3rem;
@@ -17,7 +17,7 @@
 
 	h4 {
 		font-size: 18px;
-		font-family: "Josefin Sans", sans-serif;
+		font-family: $jose, sans-serif;
 		color: rgb(255, 255, 255);
 		line-height: 1.5;
 		text-align: center;
@@ -49,13 +49,13 @@
 
         svg {
             font-size: 3rem;
-            color: #d94f2b;
+            color: $orange;
             margin-left: 2rem;
         }
 
         h2 {
                 font-size: 36px;
-                color: rgb(253, 188, 44);
+                color: $yellow;
                 margin: 0;
                 width: 100%;
                 text-align: left;
