@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import News from "./Component/News";
-import NewsData from "./Component/mockData/newsData";
+import News from "./News";
+import NewsData from "./mockData/newsData";
 
 export default function LatestNews() {
 	const [news, setNews] = useState(NewsData);

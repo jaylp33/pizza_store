@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Pizza_Des from "./Component/Pizza_Des";
+import Pizza_Des from "./Pizza_Des";
 
 export default function PizzaDescription() {
 	const [des, setDes] = useState([

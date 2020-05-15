@@ -1,6 +1,6 @@
 import React from "react";
 
-import BuildPizzaComp from "./Component/BuildPizzaComp";
+import BuildPizzaComp from "./BuildPizzaComp";
 
 export default function BuildPizza() {
 	const selectionDetail = [

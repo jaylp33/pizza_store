@@ -1,5 +1,5 @@
 .pizzaSelection {
-	background: url(../pic/Base.png);
+	background: url(../../pic/Base.png);
 	margin-top: 7rem;
 	height: 50vh;
 	display: flex;
@@ -69,10 +69,7 @@
     }
     
     .selection_pic {
-        background: #000;
-        width: 35%;
-        height: 110%;
-        border-radius: 50%;
+        width: 500px;
     }
 
 	.selection_next {

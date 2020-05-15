@@ -1,5 +1,5 @@
 import React from "react";
-import Iphone6 from "./asset/pic/iPhone6 .png";
+import Iphone6 from "../asset/pic/iPhone6 .png";
 import { faAppleAlt as Apple } from "@fortawesome/free-solid-svg-icons";
 import { faAndroid as Android } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

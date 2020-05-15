@@ -1,25 +1,41 @@
 import React from "react";
 import Header from "./Header";
-import StoreInfo from "./StoreInfo";
-import PizzaSelection from "./PizzaSelection";
-import BuildPizza from "./BuildPizza";
-import PizzaDescription from "./PizzaDescription";
-import Review from "./Review";
-import PhoneApp from "./PhoneApp";
-import LatestNews from "./LatestNews";
+import HomePage from "./HomePage/HomePage";
+import { CSSTransition } from "react-transition-group";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function Margherita() {
-	return (
-		<div className="Margherita">
-			<Header />
+	const route = [
+		{
+			path: "/Margherita",
+			name: "HomePage",
+			Component: HomePage,
+		},
+	];
 
-			<StoreInfo />
-			<PizzaSelection />
-			<BuildPizza />
-			<PizzaDescription />
-			<Review />
-			<PhoneApp />
-			<LatestNews />
-		</div>
+	return (
+		<Router>
+			<div className="Margherita">
+				<Header />
+
+				{route.map(({ path, Component }) => (
+					<Route key={path} exact path={path}>
+						{({ match }) => (
+							<CSSTransition
+								in={match != null}
+								timeout={500}
+								classNames="page"
+								unmountOnExit
+							>
+								<div className="page">
+									<Component />
+								</div>
+							</CSSTransition>
+						)}
+					</Route>
+				))}
+			</div>
+		</Router>
 	);
 }

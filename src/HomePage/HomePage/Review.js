@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import ReviewComponent from "./Component/ReviewComponent";
+import React, { useState, useRef, useEffect } from "react";
+import ReviewComponent from "./ReviewComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { TimelineMax, TweenMax } from "gsap";
 
 export default function Review() {
 	const [review, setReview] = useState([
 		{
+			index: 1,
 			ordered: "Florentine Ricotta",
 			star: 4,
 			context:
@@ -14,6 +16,8 @@ export default function Review() {
 			url: "www.pizzatempo.com",
 		},
 		{
+			index: 2,
+
 			ordered: "Garlic Prawn",
 			star: 5,
 			context: `Very Good! Very generous with the cheese! Don't know how it could get any better.`,
@@ -21,6 +25,8 @@ export default function Review() {
 			url: "www.pizzatempo.com",
 		},
 		{
+			index: 3,
+
 			ordered: "Kimchi BBQ Chicken",
 			star: 3,
 			context: `I enjoy a classic pizza with quality ingredients. Quick delivery and always friendly service.`,
@@ -28,6 +34,23 @@ export default function Review() {
 			url: "www.pizzatempo.com",
 		},
 	]);
+
+	const reviewContainer = useRef();
+
+	useEffect(() => {}, []);
+
+	const nextReview = (e) => {
+		const middleContent = reviewContainer.current.children[1];
+		const width = middleContent.offsetWidth;
+
+		const tl = new TimelineMax();
+		tl.to(middleContent, {x: width})
+
+		console.log(middleContent.style);
+		console.log("fire");
+	};
+
+	const prevReview = () => {};
 
 	return (
 		<div className="reviewComponent">
@@ -43,19 +66,17 @@ export default function Review() {
 				happy.
 			</h4>
 
-			<div className="review_detail">
-				{review.map((review) => {
-					return (
-						<ReviewComponent review={review} key={review.name} />
-					);
-				})}
+			<div className="review_detail" ref={reviewContainer}>
+				{review.map((review) => (
+					<ReviewComponent review={review} key={review.name} />
+				))}
 			</div>
 
 			<div className="review_changer">
-				<div className="review_changer_prev">
+				<div className="review_changer_prev" onClick={prevReview}>
 					<FontAwesomeIcon icon={faArrowLeft} />
 				</div>
-				<div className="review_changer_next">
+				<div className="review_changer_next" onClick={nextReview}>
 					<FontAwesomeIcon icon={faArrowRight} />
 				</div>
 			</div>

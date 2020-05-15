@@ -27,7 +27,9 @@ $orange: rgb(217, 79, 43);
 .HomePage {
 	width: 100%;
 	height: 100vh;
-	background: #000;
+	background: url(../pic/HomePage/homePageBg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -88,10 +90,16 @@ $orange: rgb(217, 79, 43);
 			background: #000;
 			width: 4rem;
 			height: 100%;
+			transition: all .5s;
+			
+			
 
 			svg {
 				width: 4rem;
 			}
+		}
+		.trigger {
+			margin-left: 370px;
 		}
 
 		.logo {
@@ -151,11 +159,12 @@ $orange: rgb(217, 79, 43);
 	transition: all 0.5s;
 }
 
-@import "hamburger.scss";
-@import "storeInfo.scss";
-@import "pizzaSelection.scss";
-@import "buildPizza.scss";
-@import "pizzaDes.scss";
-@import "review.scss";
-@import "_phoneApp.scss";
-@import "_latestNews.scss";
+@import "./homePage_com/hamburger.scss";
+@import "./homePage_com/storeInfo.scss";
+@import "./homePage_com/pizzaSelection.scss";
+@import "./homePage_com/buildPizza.scss";
+@import "./homePage_com/pizzaDes.scss";
+@import "./homePage_com/review.scss";
+@import "./homePage_com/_phoneApp.scss";
+@import "./homePage_com/_latestNews.scss";
+@import "./pizzaBuilder_com/pizzaBuilder.scss";

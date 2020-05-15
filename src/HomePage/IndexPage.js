@@ -1,8 +1,8 @@
 import React from "react";
-import "./asset/style/HomePage.scss";
+import "./asset/style/All.scss";
 import { Link } from "react-router-dom";
 
-export default function HomePage() {
+export default function IndexPage() {
 	return (
 		<div className="HomePage">
             <h1>Get it while it’s hot!</h1>

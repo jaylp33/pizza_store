@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import HomePage from "./HomePage/HomePage";
+import IndexPage from './HomePage/IndexPage';
 import Margherita from "./HomePage/Margherita";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
@@ -15,8 +15,8 @@ function App() {
 	const route = [
 		{
 			path: "/",
-			name: "Home",
-			Component: HomePage,
+			name: "Index",
+			Component: IndexPage,
 		},
 		{
 			path: "/Margherita",

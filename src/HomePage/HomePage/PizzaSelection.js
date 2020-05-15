@@ -1,7 +1,8 @@
 import React from "react";
-import square from "./asset/pic/square.png";
+import square from "../asset/pic/square.png";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Pizza from "../asset/pic/HomePage/pizza.png";
 
 export default function PizzaSelection() {
 	return (
@@ -22,7 +23,9 @@ export default function PizzaSelection() {
 					<button>Order Now</button>
 				</div>
 			</div>
-			<div className="selection_pic"></div>
+			<div className="selection_pic">
+				<img src={Pizza} alt="" />
+			</div>
 			<div className="selection_next">
 				<img src={square} alt="" />
 				<FontAwesomeIcon icon={faArrowRight} />
