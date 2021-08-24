@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import IndexPage from './HomePage/IndexPage';
+import IndexPage from "./HomePage/IndexPage";
 import Margherita from "./HomePage/Margherita";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
@@ -11,6 +11,8 @@ function App() {
 	// 	opacity: 1,
 	// 	from: { opacity: 0 },
 	// });
+
+	// testing
 
 	const route = [
 		{
@@ -37,9 +39,9 @@ function App() {
 								classNames="page"
 								unmountOnExit
 							>
-									<div className="page">
-										<Component />
-									</div>
+								<div className="page">
+									<Component />
+								</div>
 							</CSSTransition>
 						)}
 					</Route>
